@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <style>
+        .img-1{
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .img-2{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: left;
+        }
+
+        .img-3{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: left;
+            border-radius: 50px;
+        }
+
+        .second-section{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            gap: 2rem;
+            margin-top: 20px;
+        }
+
+        .search-rounded{
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: gray;
+            color: gray;
+        }
+
+        .search-shadow{
+            font-size: 13px;
+            padding: 5px 10px;
+            border-radius: 30px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: gray;
+            color: gray;
+            box-shadow: 0px 1px rgba(98, 98, 98, 0.7);
+
+        }
+
+        .signup {
+            width: 380px;
+            border: solid green;
+            padding: 0px 10px;
+        }
+
+        .search-signup{
+            width: 100%;
+        }
+
+        .sign-btn{
+            background-color: #2a549a;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+
+        .sign-btn:hover{
+            background-color: #0e1a2f;
+        }
+
+        .twitter img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            object-position: left;
+            border-radius: 100px;
+        }
+
+        .twitter{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .twitter input{
+            border: none;
+            border-style: none;
+            /* background-color: green; */
+        }
+
+        .twitter button{
+            background-color: #2a549a;
+            color: white;
+            width: 300px;
+            border-radius: 4px;
+            padding: 1px 2px;
+        }
+    </style>
+</head>
+<body>
+    <img class="img-1" src="../thumbnails/thumbnail-1.webp" alt="">
+    <img class="img-2" src="../thumbnails/thumbnail-1.webp" alt="">
+    <img class="img-3" src="../thumbnails/thumbnail-1.webp" alt="">
+
+    <div class="second-section">
+        <input class="search-rounded" type="text" placeholder="Search">
+        <input class="search-shadow" type="text" placeholder="Search Google or type a URL">
+        <div class="signup">
+            <p class="email">Email</p>
+            <input class="search-signup" type="text" placeholder="">
+            <p class="agree">By clicking Agree & Join, you agree to the Privacy Policy</p>
+            <button class="sign-btn">Agree & Join</button>
+        </div>
+        
+        <div class="twitter">
+            <img src="/thumbnails/thumbnail-1.webp" alt="">
+            <input clas="input-btn" type="text" name="" id="" placeholder="What's happening?">
+            <button class="twt-btn">Tweet</button>
+        </div>
+    </div>
+    
+</body>
+</html>

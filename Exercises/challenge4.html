@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 4</title>
+    <style>
+        button {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding: 10px 14px;
+            font-weight: 500;
+            background-color: #0a8805;
+            color: white;
+            border: none;
+            transition: all 0.2s;
+            cursor: pointer;
+         
+        }
+        .pagination{
+            display: inline-flex;
+            gap: 1rem;
+        }
+        p{
+            text-decoration: underline;
+            color: rgb(30, 77, 245);
+        }
+
+        div{
+            margin: 2rem;
+        }
+
+        .stretch button:hover{
+            padding: 20px 40px;
+        }
+
+        .Shadow button:active{
+
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .Margin button:hover{
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 0 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagination">
+        <button>Back</button>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <button>Next</button>
+    </div>
+
+    <div class="stretch">
+        <button>Stretch</button>
+    </div>
+    <div class="Shadow">
+        <button>Shadow</button>
+    </div>
+    <div class="Margin">
+        <button>One</button>
+        <button>Two</button>
+        <button>Three</button>
+    </div>
+</body>
+</html>

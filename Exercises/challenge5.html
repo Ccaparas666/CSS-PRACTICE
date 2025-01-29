@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 5</title>
+
+    <style>
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .tahoma{
+            font-family: Tahoma;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .Arial {
+            font-family: Arial;
+            font-size: 20px;
+            font-weight: bold;
+            width: 280px;
+            margin-bottom: 20px;
+        }
+
+        .Arial span {
+            color: red;
+            font-weight: lighter;
+            font-size: 15px;
+        }
+
+        .Verdana {
+            font-family: Verdana;
+            width: 300px;
+            border: solid;
+            padding: 1rem;
+        }
+
+        .Verdana span {
+            display: block;
+        }
+
+        .Verdana .title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .Verdana .header-description{
+            color: gray;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        .Verdana .description {
+            font-size: 13px;
+            font-weight: 500;
+            width: 250px;
+            line-height: 18px;
+            margin-bottom: 15px;
+        }
+
+        .Verdana button {
+            background-color: green;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 0.15s, opacity 0.15s;
+        }
+
+        .Verdana button:hover{
+            background-color: rgb(5, 64, 5);
+            opacity: 0.8;
+        }
+
+        .Arial-center{
+            margin-top: 20px;
+            font-family: Arial;
+            text-align: center;
+            width: 280px;
+            line-height: 30px;
+        }
+
+        .Arial-center .first{
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .Arial-center .second{
+            font-weight: lighter;
+            font-size: small;
+        }
+
+        .Arial-center .third {
+            font-weight: lighter;
+            color: rgba(26, 115, 241, 0.992);
+            cursor: pointer;
+        }
+
+        .second-exercise{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            font-family: Arial;
+            
+        }
+
+        .E5e{
+            text-align: center;
+            width: 300px;
+            line-height: 25px;
+        }
+
+        .E5e .color {
+            color: rgb(171, 112, 1);
+            font-size: 12px;
+            
+        }
+
+        .E5e .text-size{
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .E5e .font-weight{
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .E5e .text-size-2{
+            font-size: 13px;
+        }
+
+        .E5e button {
+            background-color: rgb(55, 111, 215);
+            color: white;
+            padding: 6px 16px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.15s
+        }
+
+        .E5e button:hover {
+            background-color: rgb(34, 71, 140);;
+        }
+
+        .E5f {
+            text-align: left;
+            width: 300px;
+            line-height: 25px;
+        }
+
+        .E5f .size {
+            font-size: x-large;
+        }
+        .E5f .color {
+            font-size: 13px;
+            color: gray;
+        }
+
+        .E5f .second-color {
+            color: green;
+            font-weight: lighter;
+            font-size: 13px;
+        }
+
+        .E5f .third-color {
+            color: red;
+            font-weight: lighter;
+            font-size: 13px;
+        }
+
+        .E5g {
+            line-height: 25px;
+            width: 500px;
+        }
+
+        .E5g .header{
+            font-weight: bold;
+        }
+
+        .E5g .color{
+            font-weight: lighter;
+            color: gray;
+        }
+
+        .E5g .no-name{
+            margin-top: 20px;
+        }
+        .E5g .no-name span {
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <p class="tahoma">
+        This is Tahoma Font
+    </p>
+
+    <p class="Arial">
+        Biggest Deals of the Year!
+        <span>Sales end Tuesday</span>
+    </p>
+    
+    <p class="Verdana">
+        <span class="title">HTML CSS Course</span>
+        <span class="header-description">Beginner to Pro</span>
+        <span class="description">In this course, we'll learn the skills you need to become a developer.</span>
+
+        <button>Get Started</button>
+    </p>
+
+    <div class="Arial-center">
+        <p class="first">Shopping for your business?</p>
+        <p class="second">See how Apple at Work can help.</p>
+        <p class="third">Learn more ></p>
+    </div>
+
+
+    <div class="second-exercise">
+        <div class="E5e">
+            <p class="color">New</p>
+            <p class="text-size">MacBook Pro</p>
+            <p class="font-weight">SuperCharged for pros.</p>
+            <p class="text-size-2">from $1999</p>
+            <button>Buy</button>
+        </div>
+
+        <div class="E5f">
+            <p class="size">1,049.61 <span class="color">USD</span></p>
+            <p class="second-color">+18.05 (1.75%) today</p>
+            <p class="color">After hours 1,048.00 <span class="third-color">-1.61 (0.15%)</span></p>
+        </div>
+
+        <div class="E5g">
+            <p class="header">freeCodeCamp.org <span class="color">@freeCodeCamp 1h</span></p>
+            <p>As a web developer, you`ll want to make your projects easy to use and navigate around.</p>
+            <p class="no-name">Here <span class="mention">@chp_it</span> outlines the top skills new developers should have</p>
+        </div>
+    </div>
+</body>
+</html>
