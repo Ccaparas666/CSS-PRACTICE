@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Practice</title>
+</head>
+<style>
+    .blue {
+        background-color: lightblue;
+    }
+    .pink {
+        background-color: pink;
+    }
+</style>
+<body style="padding-bottom: 1000px;">
+    <div style="
+        display: flex;
+        flex-direction: row ;
+        ">
+        <div class="blue">div1</div>
+        <div class="pink">div2 <p>Text</p></div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row ;
+        ">
+        <div class="blue" style="
+            width: 100px;
+        ">100px</div>
+        <div class="pink" style="
+            flex: 1;
+        ">flex 1</div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row ;
+        ">
+        <div class="blue" style="
+            flex: 1;
+        ">flex 1</div>
+        <div class="pink" style="
+            width: 100px;
+            ">100px</div>
+        <div class="blue" style="
+        flex: 2;
+    ">flex2</div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        display: flex;
+        flex-direction: row ;
+        justify-content: center;
+        ">
+        <div class="blue" style="
+            width: 100px;
+        ">100px</div>
+
+        <div class="pink" style="
+            width: 100px;
+            ">100px</div>
+
+        <div class="blue" style="
+            width: 100px;
+        ">100px</div>
+
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+        ">
+        <div class="blue" style="
+            width: 100px;
+        ">100px</div>
+
+        <div class="pink" style="
+            width: 100px;
+            ">100px</div>
+
+        <div class="blue" style="
+            width: 100px;
+        ">100px</div>
+
+    </div>
+
+
+    <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+        align-items: center;
+        ">
+        <div class="blue" style="
+            width: 100px;
+        ">100px</div>
+
+        <div class="pink" style="
+            width: 100px;
+            ">100px</div>
+
+        <div class="blue" style="
+            width: 100px;
+        ">100px</div>
+
+    </div>
+</body>
+</html>

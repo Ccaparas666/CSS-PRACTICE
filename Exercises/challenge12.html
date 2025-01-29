@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 12</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .blue {
+            background-color: lightblue;
+        }
+        .pink{
+            background-color: pink;
+        }
+
+        .E12a{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+        .blue1{
+            width: 200px;
+        }
+        .pink1 {
+            width: 75px;
+        }
+
+        .E12b {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .blue2 {
+            width: 50px;
+        }
+        .pink2 {
+            flex: 1;
+        }
+        .pink2b {
+            width: 75px;
+        }
+
+        .E12c {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .E12d{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid gray;
+            height: 50px;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .E12e {
+            border: none;
+            /* border: 1px solid gray; */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            /* align-items: center */
+            justify-content: space-between;
+            width: 300px;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        .home {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin: 0 10px;
+            padding: 6px 12px;
+        }
+
+        .notifcation {
+            background-color: rgb(70, 104, 229);
+            color: white;
+            padding: 3px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        .E12f{
+            display: flex;
+            flex-direction: row;
+            padding: 12px 20px;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(97, 63, 145);
+            color: white;
+        }
+
+        .left-section {
+            width: 150px;
+            /* background-color: lightblue; */
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .middle-section{
+            /* background-color: pink; */
+            flex: 1;
+            margin-left: 10px;
+            margin-right: 15px;
+            max-width: 700px;
+            
+        }
+        .middle-section input{
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 30px;
+            border: none;
+        }
+
+        .middle-section input::placeholder{
+            color: gray;
+            text-transform: capitalize;
+            
+        }
+        .right-section {
+            /* background-color: lightblue; */
+            width: 200px;
+            display: flex;
+            justify-content: flex-end
+            
+        }
+        
+        .right-section button {
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            ;
+        }
+
+        .E12g{
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            gap: 15px;
+            width: 350px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            padding: 15px;
+            
+        }
+
+        .profile{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .profile img {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+
+        .profile .user-info{
+            display: flex;
+            flex-direction: column;
+            /* flex: 1; */
+            width: 5000px;
+            margin-left: 10px;
+            gap: 3px;
+        }
+        .user-info .name {
+            font-weight: bold;
+        }
+        .user-info .describe{
+            color: gray;
+            font-size: 15px;
+        }
+
+         
+        .user-info .popularity{
+            font-size: 12px;
+            color: gray;
+        }
+
+        .profile button{
+            background-color: rgb(74, 149, 235);
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .profile button:hover{
+            background-color: rgb(126, 185, 253);
+            opacity: 0.7;
+        }
+
+        .profile button:active{
+            background-color: rgb(3, 36, 74);
+            opacity: 0.7;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="E12a">
+        <div class="blue blue1">200px</div>
+        <div class="pink pink1">75px</div>
+    </div>
+
+    <div class="E12b">
+        <div class="blue blue2">item 1</div>
+        <div class="pink pink2">item 2</div>
+        <div class="blue pink2b">item 3</div>
+    </div>
+
+    <div class="E12c">
+        <div class="pink">item1</div>
+        <div class="pink">item2</div>
+        <div class="pink">item3</div>
+        <div class="pink">item4</div>
+    </div>
+
+    <div class="E12d">
+        <div class="pink">item1</div>
+        <div class="pink">item2</div>
+    </div>
+
+    <div class="E12e">
+        <div class="home">
+            <p class="title">Home</p>
+            <p class="notifcation">14</p>
+        </div>
+        <div class="home">
+            <p class="title">Notifcations</p>
+            <p class="notifcation">3</p>
+        </div>
+        <div class="home">
+            <p class="title">Messages</p>
+            <p class="notifcation">5</p>
+        </div>
+    </div>
+
+    <div class="E12f">
+        <div class="left-section">
+            Home
+        </div>
+
+        <div class="middle-section">
+            <input type="search" name="" id="" placeholder="search">
+        </div>
+
+        <div class="right-section">
+            <button class="download">Download</button>
+        </div>
+    </div>
+
+    <div class="E12g">
+        <div class="profile">
+            <img src="/channel-pictures/channel-1.jpeg" alt="">
+            <div class="user-info">
+                <div class="name">oliver</div>
+                <div class="describe">the cat</div>
+                <div class="popularity">Popular</div>
+            </div>
+            <button class="follow">Follow</button>
+        </div>
+        <div class="profile">
+            <img src="/channel-pictures/channel-2.jpeg" alt="">
+            <div class="user-info">
+                <div class="name">Mimi</div>
+                <div class="describe">Sleepy Cat</div>
+                <div class="popularity">Popular</div>
+            </div>
+            <button class="follow">Follow</button>
+        </div>
+        <div class="profile">
+            <img src="/channel-pictures/channel-3.jpeg" alt="">
+            <div class="user-info">
+                <div class="name">Rexs</div>
+                <div class="describe">Happy Bulldog</div>
+                <div class="popularity">Popular</div>
+            </div>
+            <button class="follow">Follow</button>
+        </div>
+    </div>
+</body>
+</html>

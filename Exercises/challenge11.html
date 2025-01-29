@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11</title>
+    <style>
+        .E11a{
+            display: grid;
+            grid-template-columns: 200px 75px;
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+        .pink {
+            background-color: pink;
+        }
+
+        .E11b{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+        }
+
+        .E11c{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+            margin-bottom: 2rem;
+        }
+
+        p {
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  column-gap: 20px;
+}
+
+.profile {
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+.mutual-friends-row {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  align-items: center;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+.mutual-friend-picture {
+  height: 28px;
+  width: 28px;
+  object-fit: cover;
+  border-radius: 14px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.mutual-friends {
+  color: rgb(100, 100, 100);
+}
+
+.add-friend-button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+} */
+
+.gird2{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 20px;
+}
+
+.profile-pictures{
+   vertical-align: top;
+   width: 200px;
+   align-items: center;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pictures .profile {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 8px;
+    object-position: left;
+    
+}
+
+.profile-pictures .name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.friends {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.friends img{
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    
+}
+
+.count-friends {
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+
+.add-friend {
+    background-color: rgb(68, 122, 238);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="E11a">
+        <div class="blue">200px</div>
+        <div class="pink">75px</div>
+    </div>
+
+    <div class="E11b">
+        <div class="blue">col1</div>
+        <div class="pink">col2</div>
+        <div class="blue">col3</div>
+    </div>
+
+    <div class="E11c">
+        <div class="pink">col1</div>
+        <div class="pink">col2</div>
+        <div class="pink">col3</div>
+        <div class="pink">col4</div>
+        <div class="pink">col1</div>
+        <div class="pink">col2</div>
+        <div class="pink">col3</div>
+        <div class="pink">col4</div>
+    </div>
+
+    <!-- <div class="E11d">
+        <div class="section">
+            <img src="/thumbnails/thumbnail-1.webp" alt="" style="width: 200px; height: 250px;">
+            <p class="name">Oliver</p>
+            <div class="friends">
+                <img src="/channel-pictures/channel-1.jpeg" alt="" class="friends-pic">
+                <div class="mutual">2 mutual friends</div>
+            </div>
+            <button>Add friend</button>
+        </div>
+        <div class="section">
+            <img src="/thumbnails/thumbnail-1.webp" alt="" style="width: 200px; height: 250px;">
+            <p class="name">Oliver</p>
+            <div class="friends">
+                <img src="/channel-pictures/channel-1.jpeg" alt="" class="friends-pic">
+                <div class="mutual">2 mutual friends</div>
+            </div>
+            <button>Add friend</button>
+        </div>
+        <div class="section">
+            <img src="/thumbnails/thumbnail-1.webp" alt="" style="width: 200px; height: 250px;">
+            <p class="name">Oliver</p>
+            <div class="friends">
+                <img src="/channel-pictures/channel-1.jpeg" alt="" class="friends-pic">
+                <div class="mutual">2 mutual friends</div>
+            </div>
+            <button>Add friend</button>
+        </div>
+    </div> -->
+
+    <div class="grid">
+        <div class="profile">
+          <img class="profile-picture" src="cat.jpg">
+          <p class="name">
+            Oliver
+          </p>
+          <div class="mutual-friends-row">
+            <img class="mutual-friend-picture" src="dog2.jpg">
+            <p class="mutual-friends">
+              2 mutual friends
+            </p>
+          </div>
+          <button class="add-friend-button">
+            Add Friend
+          </button>
+        </div>
+  
+        <div class="profile">
+          <img class="profile-picture" src="cat2.jpg">
+          <p class="name">
+            Mimi
+          </p>
+          <div class="mutual-friends-row">
+            <img class="mutual-friend-picture" src="dog2.jpg">
+            <p class="mutual-friends">
+              3 mutual friends
+            </p>
+          </div>
+          <button class="add-friend-button">
+            Add Friend
+          </button>
+        </div>
+  
+        <div class="profile">
+          <img class="profile-picture" src="dog.jpg">
+          <p class="name">
+            Rex
+          </p>
+          <div class="mutual-friends-row">
+            <img class="mutual-friend-picture" src="dog2.jpg">
+            <p class="mutual-friends">
+              4 mutual friends
+            </p>
+          </div>
+          <button class="add-friend-button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+
+      <div class="gird2">
+        <div class="profile-pictures">
+            <img class="profile" src="/thumbnails/thumbnail-1.webp" alt="">
+            <p class="name">Oliver</p>
+            <div class="friends">
+                <img src="/channel-pictures/channel-1.jpeg" alt="" class="friends-picture">
+                <p class="count-friends">2 mutual friends</p>
+            </div>
+            <button class="add-friend">Add friend</button>
+        </div>
+        <div class="profile-pictures">
+            <img class="profile" src="/thumbnails/thumbnail-1.webp" alt="">
+            <p class="name">Oliver</p>
+            <div class="friends">
+                <img src="/channel-pictures/channel-1.jpeg" alt="" class="friends-picture">
+                <p class="count-friends">2 mutual friends</p>
+            </div>
+            <button class="add-friend">Add friend</button>
+        </div>
+        <div class="profile-pictures">
+            <img class="profile" src="/thumbnails/thumbnail-1.webp" alt="">
+            <p class="name">Oliver</p>
+            <div class="friends">
+                <img src="/channel-pictures/channel-1.jpeg" alt="" class="friends-picture">
+                <p class="count-friends">2 mutual friends</p>
+            </div>
+            <button class="add-friend">Add friend</button>
+        </div>
+        
+      </div>
+</body>
+</html>
