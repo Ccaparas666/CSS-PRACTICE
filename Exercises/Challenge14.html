@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 14</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      margin: 0;
+      padding-top: 60px;
+      padding-left: 80px;
+      height: 3000px;
+    }
+
+    .sticky-bottom{
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background-color: black;
+      color: white;
+    }
+
+    .right-bar{
+      background-color: green;
+      color: white;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 100px;
+      
+    }
+
+   
+
+    .E14d {
+      background-color: white;
+      width: 300px;
+      height: 100px;
+      line-height: 25px;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 15px;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f6f2f2;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 55px;
+      
+    }
+
+   
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile img{
+      background-color: green;
+      width: 35px;
+      border-radius: 18px;
+      object-fit: cover;
+      margin-right: 8px;
+      margin-left: 60px;
+    }
+
+    .profile .name {
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .buttons {
+      margin-right: 60px;
+    }
+
+    .add-friend {
+      background-color: rgb(57, 113, 213);
+      padding: 8px 15px;
+      color: white;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .message{
+      background-color: rgb(175, 175, 175);
+      padding: 8px 15px;
+      color: black;
+      border-radius: 5px;
+      border: none;
+    }
+    
+    .change-size {
+      width: 30px;
+      object-fit: cover;
+
+    }
+
+    .sidebar {
+      position: fixed;
+      background-color: rgb(44, 46, 50);
+      top: 55px;
+      bottom: 0;
+      left: 0;
+      /* height: 55px; */
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+    }
+
+    .profile-pictures{
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(26, 27, 31);
+      /* position: absolute; */
+      height: 100vh;
+    }
+
+    .profile-pictures img {
+      height: 45px;
+      object-fit: cover;
+      border-radius: 24px;
+      margin: 8px 10px;
+    }
+    
+
+    .container-info {
+      /* flex: 1; */
+      width: 150px;
+      /* background-color: green; */
+      padding: 1rem;
+      line-height: 30px;
+    }
+    
+    .info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .info-color{
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+
+
+    .color-gray {
+      color: rgb(147, 147, 147);
+    }
+    
+  </style>
+</head>
+<body>
+    <!-- <div class="sticky-bottom">bottom-right</div>
+    <div class="right-bar">right sidebar</div>
+    <div class="overlay">
+      <div class="E14d">
+        <div class="title">Modal Title</div>
+        <div class="description">This is a modal</div>
+        <button>Close</button>
+      </div>
+    </div> -->
+
+    <div class="header">
+      <div class="profile">
+        <img src="/channel-pictures/channel-2.jpeg" alt="">
+        <div class="name">Oliver Cat</div>
+      </div>
+
+      <div class="buttons">
+        <button class="add-friend">Add friend</button>
+        <button class="message">Message</button>
+      </div>
+    </div>
+    
+    <div class="sidebar">
+      <div class="profile-pictures">
+        <img src="/channel-pictures/channel-10.jpeg" alt="">
+        <img src="/channel-pictures/channel-12.jpeg" alt="">
+        <img src="/channel-pictures/channel-11.jpeg" alt="">
+      </div>
+      <div class="container-info">
+        <div class="info">
+          <div class="info-color">INFO</div>
+          <img class="change-size" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Plus_symbol.svg/1200px-Plus_symbol.svg.png" alt="">
+        </div>
+        <div class="color-gray"># new-videos</div>
+        <div class="color-gray"># updates</div>
+        <div class="color-gray"># faq</div>
+      </div>
+    </div>
+
+
+</body>
+</html>

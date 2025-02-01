@@ -3,7 +3,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* align-items: center; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+
+    /* border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228); */
+
+    border-bottom: 1px solid rgb(228, 228, 228);
+
+    z-index: 100;
 }
 
 .left-section {
@@ -91,8 +105,27 @@
     height: 24px;
 }
 
-.notifcations-icon{
+.notifications-icon{
     height: 24px;
+}
+
+.notifications-icon-container{
+    position: relative;
+}
+
+.notifications-count {
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(199, 0, 0);
+    color: white;
+    text-overflow: ellipsis;
+    
+    
 }
 
 .current-user-picture{
