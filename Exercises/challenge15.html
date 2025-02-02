@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 3000px;
+        }
+        .container-1 {
+            background-color: rgb(226, 220, 220);
+            width: 300px;
+            height: 100px;
+            position: relative;
+        }
+
+        .close{
+            background-color: black;
+            color: white;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .container-2 {
+            background-color: rgb(255, 254, 254);
+            width: 320px;
+            height: 180px;
+            /* margin-top: 10px; */
+            position: fixed;
+            /* border: 1px solid black; */
+            background-color: rgb(122, 122, 122);
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .container-3 {
+            background-color: rgb(255, 254, 254);
+            width: 320px;
+            height: 180px;
+            /* margin-top: 10px; */
+            position: absolute;
+            /* border: 1px solid black; */
+            background-color: rgb(122, 122, 122);
+            bottom: 300px;
+            right: 15px;
+        }
+
+        .close-3{
+            background-color: black;
+            color: white;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+        }
+
+        .timestamp{
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            font-weight: lighter;
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .clothing {
+            background-color: rgb(212, 210, 209);
+            height: 200px;
+            width: 200px;
+            position: relative;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .clothing img{
+            width: 180px;
+            object-fit: cover;
+        }
+
+        .discount {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            padding: 6px 8px;
+        }
+
+        .add-cart {
+            position: absolute;
+            background-color: rgb(205, 205, 205);
+            padding: 7px 12px;
+            border-radius: 5px;
+            border: 1px solid black;
+            cursor: pointer;
+
+        }
+
+        .background-color{
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.664);
+            z-index: 10;
+            width: 100%;
+            height: 80px;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <button class="close">X</button>
+    </div>
+
+    <div class="container-2">
+    </div>
+
+    <div class="container-3">
+        <button class="close-3">X</button>
+        <div class="timestamp">0:29</div>
+    </div>
+
+    <div class="clothing">
+        <div class="discount">20% OFF</div>
+        <img src="data:image/webp;base64,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" alt="">
+        <div class="background-color">
+            <button class="add-cart">Add to Cart</button>
+        </div>
+        
+    </div>
+</body>
+</html>
